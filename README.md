@@ -1,4 +1,3 @@
-# QR-code-generator
 import qrcode
 
 # Define the website URL
@@ -16,3 +15,8 @@ qr.make(fit=True)
 
 # Create an image from the QR Code instance
 qr_img = qr.make_image(fill_color="black", back_color="white")
+
+# Save the QR code image to a file
+qr_img.save("qr_code.png")
+
+print("QR code generated and saved as qr_code.png")
